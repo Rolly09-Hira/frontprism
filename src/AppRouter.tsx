@@ -6,6 +6,7 @@ import AdminLayout from './layouts/AdminLayout';
 import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/public/Home';
 import About from './pages/public/About';
+import Register from './pages/public/Register';
 import Login from './pages/public/Login';
 import Dashboard from './pages/admin/Dashboard';
 import ProjetsAdmin from './pages/admin/ProjetsAdmin';
@@ -44,6 +45,7 @@ export default function AppRouter() {
           <Route path="login" element={<Login />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
+        <Route path="/register" element={<Register />}/><Route/>
 
         {/* Routes admin protégées */}
         <Route
